@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../configure/firebase";
 
@@ -36,7 +36,12 @@ const SignUp = () => {
             <input type="number" placeholder="Please Enter your phone number" onChange={(e)=>setNumber(e.target.value)} /><br></br>
             <input type="password" placeholder="Pleaser Create a Password" onChange={(e)=>setPassword(e.target.value)} /><br></br>
 
-            <button style={{width: "150px", height: "30px"}} onClick={register}>SIGN UP</button>
+            <button style={{width: "150px", height: "30px"}} onClick={register}>SIGN UP</button><br></br>
+
+            <span>Already have an account?</span>
+            <span>
+                <Link to="/">Login</Link>
+            </span>
         </div>
     )
 }
