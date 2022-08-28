@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../configure/firebase";
 
@@ -13,7 +13,7 @@ const SignUp = () => {
     const [number, setNumber] = useState('')
     const [password, setPassword] = useState('')
 
-    let history = useHistory();
+    let history = useNavigate();
 
     const register = () =>{
         createUserWithEmailAndPassword(auth, email, name, surname, number, password).then(()=>{

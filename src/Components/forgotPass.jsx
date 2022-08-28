@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {useHistory} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import {Link} from "react-router-dom"
 import {sendPasswordResetEmail} from 'firebase/auth'
 import {auth} from  '../configure/firebase'
@@ -8,7 +8,7 @@ function ForgotPass(){
 
     const [email, setEmail] = useState('');
 
-    let history = useHistory();
+    let history = useNavigate();
 
     const forgotPass = (()=>{
 

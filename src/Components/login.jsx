@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../configure/firebase";
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Link } from "react-router-dom";
 import "../css/login.css"
 
@@ -10,7 +10,7 @@ function Login(){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    let history = useHistory();
+    let history = useNavigate();
     const login =(()=>{
         signInWithEmailAndPassword(auth, email, password).then(()=>{
             alert("Welcome back")
