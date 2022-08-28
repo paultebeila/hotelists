@@ -5,6 +5,7 @@ import React from 'react';
 import ForgotPass from './Components/forgotPass';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from "./Components/signup"
+import Dashboard from './Components/Dashboard'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Login />} />
-        <Route path="/forgotPass" component={<ForgotPass />} />
-        <Route path="/signup" component={<SignUp />} />
+        <Route path="/forgotPass" element={<ForgotPass />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
     </div>
