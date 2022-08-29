@@ -23,7 +23,7 @@ function ForgotPass(){
     return(
         <div className="container">
 
-            <h1>Forgot Password</h1>
+            <h1>Reset Password</h1>
             <input type="email" placeholder="Enter your email" onChange={(e)=> setEmail(e.target.value)}/><br></br>
 
             <button style={{width: "150px", height: "30px"}} onClick={forgotPass}>Reset Password</button><br></br>

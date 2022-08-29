@@ -6,6 +6,7 @@ import ForgotPass from './Components/forgotPass';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from "./Components/signup"
 import Dashboard from './Components/Dashboard'
+import EnterEmailToRestPassword from './Components/EnterEmailToRestPassword'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/forgotPass" element={<ForgotPass />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/enterEmail" element={<EnterEmailToRestPassword />} />
       </Routes>
     </BrowserRouter>
     </div>

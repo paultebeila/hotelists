@@ -37,7 +37,7 @@
 }
 
 input:focus { 
-    outline: none !important;
+    /* outline: none !important; */
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
@@ -69,10 +69,10 @@ textarea:focus {
 .det-container{
 
     background-color: #719ECE;
-    height: 75vh;
+    height: 100vh;
     width: 100vw;
     position: absolute;
-    display: flex;
+    
 }
 
 .left-container{
@@ -81,11 +81,8 @@ textarea:focus {
     height: 60vh;
     width: 20vw;
     margin-top: 2vh;
-
-
-
+    float: left;
 }
-
 
 .center-container{
 
@@ -98,6 +95,7 @@ textarea:focus {
     width: 54vw;
     margin-top: 2vh;
     background-color: white;
+    float: left;
     
 }
 
@@ -113,8 +111,11 @@ textarea:focus {
     height: 60vh;
     width: 20vw;
     margin-top: 2vh;
-    
+    float: left;
+}
 
+.right-container h3{
+    background-color: transparent;
 }
 
 .left-container img{
@@ -173,28 +174,115 @@ textarea:focus {
     height: 6vh;
     background-color: transparent;
 }
- 
+
 .client-info-container{
 
-    background-color: black;
+    height: 10vh;
+    margin-left: 1%;
+    width: 96%;
+    border-radius: 10px;
+    border: 2px solid #719ECE;
+    background: transparent;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+ } 
+
+ .first-card-line{
+    height: 5vh;
+    width: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+
+ }
+
+ .names{
+    float: left;
+    background-color: transparent;
+ }
+
+ .date{
+    background-color: transparent;
+    float: right;
+
+ }
+
+ .second-card-line{
+    height: 5vh;
+    width: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    
+ } 
+
+ .type{
+
+    float: left;
+    background-color: transparent;
+
+ }
+
+ .guest-number{
+
+    float: left;
+    background-color: transparent;
+    margin-left: .5vw;
+ }
+
+ .payment{
+
+    float: right;
+    background-color: transparent;
+ }
+
+ .bottom{
+
+    height: 30vh;
+    width: 100vw;
+    margin-top: 70vh;
+    color: rgb(15, 15, 14);
+    background-color: whitesmoke;
+    text-transform: capitalize;
+    /* background-image: url('../images/footer.jpeg'); */
+    background-color: #719ECE;
+    background-size: cover;
+ }
+
+.detail-container{
+
+    background-color: transparent;
 
 }
 
-.names{
-    height: auto;
-    width: 20vw;
-} 
-.date{
-height: auto;
-width: 5vw;
+ .first{
 
+    height: 5vh;
+    width: 10vw;
+    margin-left: 2.2vw;
+    background-color: transparent;
+ }
+.first:hover{
+
+    background-color: #213953;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
 }
-.type{
-float:left
-}
-.guest-number{
-float: left;
-} 
-.payment{
-float:right;
+
+ .second{
+
+    height: 5vh;
+    width: 10vw;
+    margin-left: 2.2vw;
+    background-color: transparent;
+ }
+
+ .second:hover{
+
+    background-color: #213953;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+
 }

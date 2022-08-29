@@ -29,8 +29,6 @@ function Dashboard() {
                 <button className='earning'> Earning </button>
                 <button className='rooms-available'> Rooms Available </button>
                 <button className='logout'>Logout</button>
-
-
             </div>
 
             <div className='center-container'>
@@ -123,19 +121,60 @@ function Dashboard() {
             
                 <h3>Latest Booking List</h3>
 
-                <div className='client-info-container' style={{ display: 'flex' }}> 
-                    <div className='names' > Charles </div>
-                    <div className='date'> 01/01/01 </div>
-                    <div className='type'>Single</div>
-                    <div className='guest-number'> 1 Guest </div>
-                    <div className='payment'> Paid </div>
+                <div className='client-info-container' > 
+                   <div className='first-card-line'>
+                      <div className='names'> Charles </div>
+                      <div className='date'> 01/01/01 </div>
+                   </div>
+
+                   <div className='second-card-line'>
+                    <div className='type'>#Single</div>
+                    <div className='guest-number'> 1-Guest </div>
+                    <div className='payment'> Paid </div> 
+                   </div>
+                   
                 </div>
 
             </div>
 
+            <div className='bottom'>
+            
+            <h2 style={{ background: 'transparent' }} >Average Ration</h2>
+            
+            <div className='detail-container'>
+            
+                <div className='upper-container' style={{ display: 'flex', backgroundColor: 'transparent' }}>
+                    <div className='first'>Monthly Rate</div>
+                    <div className='first'>Occupacy Rate</div>
+                    <div className='first'>Repaire</div>
+                    <div className='first'>Food & Bev</div>
+                    <div className='first'>Telephone</div>
+                    <div className='first'>Water</div>
+                    <div className='first'>Electricity</div>
+                    <div className='first'>Generator</div>
+
+                </div>
+
+                <div className='lower-container' style={{ display: 'flex', backgroundColor: 'transparent' }}>
+                
+                    <div className='second'>ZAR 1 450 000</div>
+                    <div className='second'>40% UP</div>
+                    <div className='second'>ZAR 30 480</div>
+                    <div className='second'> ZAR 109 000 </div>
+                    <div className='second'>ZAR 38 000</div>
+                    <div className='second'>ZAR 138 000</div>
+                    <div className='second'>ZAR 100 000</div>
+                    <div className='second'>ZAR 50 000</div>
+
+                </div>
+            </div>
+
+            </div>
+
         </div>
-    
-    </div>
+       
+       
+</div>
     
     )
 }
