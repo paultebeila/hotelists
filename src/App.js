@@ -5,6 +5,7 @@ import React from 'react';
 import ForgotPass from './Components/forgotPass';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import SignUp from "./Components/signup"
+import Family from './Components/family';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Login}></Route>
         <Route path="/forgotPass" component={ForgotPass}></Route>
         <Route path="/signup" component={SignUp}></Route>
+        <Route path="/family" component={Family}></Route>
       </Switch>
     </Router>
     </div>

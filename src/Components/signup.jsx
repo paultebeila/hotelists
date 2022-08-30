@@ -38,7 +38,7 @@ const SignUp = () => {
 
             <button style={{width: "150px", height: "30px"}} onClick={register}>SIGN UP</button><br></br>
 
-            <span>Already have an account?</span>
+            <span>Already have an account? </span>
             <span>
                 <Link to="/">Login</Link>
             </span>
