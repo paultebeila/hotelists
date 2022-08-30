@@ -5,7 +5,8 @@ import React from 'react';
 import ForgotPass from './Components/forgotPass';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from "./Components/signup"
-import Home from './Components/home';
+import Dashboard from './Components/Dashboard'
+import Home from './Components/home'
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={ <Login />} />
         <Route path="/forgotPass" element={<ForgotPass />} />
-        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/home" element={<Home />} />
+
       </Routes>
     </BrowserRouter>
     </div>
@@ -24,4 +27,3 @@ function App() {
 }
 
 export default App;
-
