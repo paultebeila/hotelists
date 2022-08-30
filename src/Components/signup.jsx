@@ -17,7 +17,7 @@ const SignUp = () => {
 
     const register = () =>{
         createUserWithEmailAndPassword(auth, email, name, surname, number, password).then(()=>{
-            history.push("/home");
+            history("/home");
         }).catch((error)=>{
             console.log(error);
             alert("Error!!!");
