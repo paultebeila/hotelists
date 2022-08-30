@@ -3,6 +3,7 @@
     overflow-x: hidden;
 }
 .cont{
+
    background-image: url('../images/landscape.jpg'); 
    background-size: cover;
    width: 100vw;
@@ -25,7 +26,14 @@
 .links{
     margin-top: -20vh;
     margin-left: 50vw;
+    background-color:transparent;
 }
+
+.links a{
+    background-color: transparent;
+}
+
+
 .home{
    color: #fff;
    font-size: 20px;
@@ -69,8 +77,9 @@
 }
 .rooms{
     width: 100vw;
+    height: 45vh;
     align-content: center;
-    /* background-color: blue; */
+    overflow-y: hidden;
 }
 .rooms h2{
   color:brown;
@@ -129,7 +138,11 @@
     height: 20vh;
     border-radius: 20px;
 }
+.msg{
+    background-color: transparent;
+}
 .msg p{
+    background: transparent;
     color:aqua;
     font-size: 18px;
     margin-top: 15vh;
@@ -137,6 +150,11 @@
 .about-cont{
     margin-top: 10vh;
 }
+
+.about-cont h2{
+    margin-right: 15vw;
+}
+
 .info{
     display: flex;
     margin-left: 15vw;
@@ -161,8 +179,10 @@
 }
 .features-cont .logos{
     display: flex;
+    margin-left: 13vw;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 20vw;
+    margin-right: 10vw;
 }
 .features-cont h2{
     color:brown;
@@ -198,25 +218,44 @@
 .footer{
     background-color: antiquewhite;
     display: flex;
+    width: 100vw;
 }
 .footer-cont{
     display: flex;
+    width: 100vw;
+    background-color: transparent;
     
 }
+
 .activities{
     margin-left: 20vw;
     font-style: italic;
+    background-color: transparent;
+}
+.activities p{
+    background-color: transparent;
 }
 .services{
     margin-left: 20vw;
     font-style: italic;
+    background-color: transparent;
+}
+.services p{
+    background-color: transparent;
 }
 .cont-services{
     margin-left: 20vw;
     font-style: italic; 
+    background-color: transparent;
+}
+
+.cont-services p{
+    background-color: transparent;
 }
 .bottom-footer{
     align-items: center;
+    width: 100vw;
+    background-color: transparent;
 
 }
 

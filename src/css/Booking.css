@@ -1,0 +1,70 @@
+.container{
+    width: 100vh;
+    height: 100vh;
+}
+.page{
+
+    background-image: url('../images/landscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 90vh;
+
+}
+.logo-img img{
+    width: 90px;
+    height: 80px;
+    padding-right: -10%;
+}
+
+.nav-links a{
+    margin-left: 20px;
+    
+}
+
+.input-fields{
+    margin-top: 20px;
+}
+
+.input-fields input{
+    margin-left: 13px;
+}
+
+.input-fields button{
+    margin-left: 10px;
+    width: 10%;
+    height: 30px;
+}
+
+.text{
+    color: #fff;
+}
+
+.tables{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.booking-table{
+    border: 2px solid rgb(24, 22, 22);
+    border-left: 2px solid rgb(24, 22, 22);
+}
+
+.table-header{
+    background-color: gray;
+    color: #fff;
+    border-left: 2px solid rgb(24, 22, 22);
+}
+
+.table-data{
+    background-color: darkslategrey;
+    color: #111;
+}
+
+.slip-table{
+    background-color: darkslategray;
+    color: #111;
+    margin-left: 20px;
+    
+}
+
