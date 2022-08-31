@@ -31,12 +31,12 @@ function Login(){
 
             <button style={{width: '150px', height: '30px'}} onClick={login}>Login</button><br></br><br></br>
 
-            <span>Forgot password?</span>
+            <span>Forgot password? </span>
             <span>
                 <Link to="/forgotPass">Click here</Link>
             </span>
             <br></br>
-            <span>Don't have account?</span>
+            <span>Don't have account? </span>
             <span>
                 <Link to="/signup">Sign Up</Link>
             </span>

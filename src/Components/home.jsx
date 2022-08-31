@@ -1,12 +1,20 @@
+
 import "../css/home.css";
 import { MdHome} from "react-icons/md"
 import { MdEmail} from "react-icons/md"
 import { BsTelephone} from "react-icons/bs"
 /*import { CgCopyright } from "react-icons/cg"*/
 
+import Family from "./family";
+
+
+
+
+
 function Home(){
     return(
         <div>
+
             <div className="cont">
                 <img src="bopline.png" alt="Logo"/>
                     {/* <img src="../images/boopline.png"alt="Logo"/> */}
@@ -123,6 +131,9 @@ function Home(){
                 </div>
                 <p className="copyright">{/*<CgCopyright/>*/}Copyright.All rights reserved</p>
             </div>
+
+            
+
         </div>
     )
 }
