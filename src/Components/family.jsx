@@ -1,16 +1,14 @@
-import Itachi from "../photos/photo1.jpg";
+// import Itachi from "../photos/photo.jpg";
+import bg from '../slideIMG/5.jpg';
 import "../css/family.css";
 import { Link } from "react-router-dom"
 
-
 function Family(){
-
-
 
     return(
         <div className="container">
             <div className="top">
-                <img src={Itachi} alt="" />
+                <img src={bg} alt="" />
             </div>
             
             <div className="links">
@@ -32,10 +30,9 @@ function Family(){
             </div>
 
             <div className="search">
-                <button className="in">Check in date</button>
-                <button className="out">Check out date</button>
-                <button className="spend">Duration</button>
-                <button className="nyaka">Search</button>
+                <input type="date" placeholder="Check in date" className="in" required/>
+                <input type="date" placeholder="Check out date" className="out" required/>
+                <button type="button" placeholder="Search" className="nyaka"> Search </button>
             </div>
 
             <div><h1 style={{marginTop: '2%'}}>Room Booking</h1></div>

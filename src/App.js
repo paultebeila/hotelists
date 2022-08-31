@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from "./Components/signup"
 import Dashboard from './Components/Dashboard'
 import Home from './Components/home'
+import Family from './Components/family'
+import SlideShow from './Components/SlideShow'
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/home" element={<Home />} />
-
+        <Route path="/family" element={<Family />} />
+        <Route path="/slide" element={<SlideShow />} />
       </Routes>
     </BrowserRouter>
     </div>
