@@ -3,12 +3,6 @@ import "../css/home.css";
 import { MdHome} from "react-icons/md"
 import { MdEmail} from "react-icons/md"
 import { BsTelephone} from "react-icons/bs"
-/*import { CgCopyright } from "react-icons/cg"*/
-
-
-
-
-
 
 function Home(){
     return(
