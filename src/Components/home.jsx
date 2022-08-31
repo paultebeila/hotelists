@@ -5,7 +5,6 @@ import { MdEmail} from "react-icons/md"
 import { BsTelephone} from "react-icons/bs"
 /*import { CgCopyright } from "react-icons/cg"*/
 
-import Family from "./family";
 
 
 
