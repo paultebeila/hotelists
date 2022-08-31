@@ -28,7 +28,7 @@ function ForgotPass(){
 
             <button style={{width: "150px", height: "30px"}} onClick={forgotPass}>Reset Password</button><br></br>
 
-            <span>Don't have an account?</span> <span>
+            <span>Don't have an account? </span> <span>
                 <Link to="/signup">Create an account here</Link>
                 
             </span>
