@@ -11,6 +11,7 @@ import Home from './Components/home'
 import Booking from './Components/Booking';
 
 import Family from './Components/family';
+import Payment from './Components/Payment';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/family" element={<Family/>}></Route>
+        <Route path="/Payment" element={<Payment/>}/>
       </Routes>
     </BrowserRouter>
 

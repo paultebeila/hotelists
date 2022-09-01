@@ -61,28 +61,25 @@ function Family(props){
                 <table>
                     <thead>
                         <tr style={{backgroundColor: 'darkgray'}}>
-                            <td>Room Type</td>
-                            <td>Sleeps</td>
-                            <td>Price per Night</td>
+                            <td>Room Info</td>
+                            <td>Qty</td>
                             <td>Services</td>
+                            <td>Initial Amount</td>
                             <td>Amount</td>
-                            <td>Booking Slip</td>
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        
                         <tr>
                             <td>
                                 Family room gives you<br></br> enough space and confortability<br></br> to make your family not wanna leave
                             </td>
                             <td>2</td>
-                            <td>ZAR 3600</td>
                             <td>
-                                <p>*Breakfast, Lunch, Dinner</p><br></br>
-                                <p>*Massage</p><br></br>
-                                <p>*Swimming Pool</p>
+                                <p>Breakfast, Lunch, Dinner,<br></br>
+                                   Massage,Swimming Pool,Wifi<br></br>
+                                </p>
                             </td>
+                            <td>ZAR 3600</td>
                             <td>
                                 <button className="amount">Drop down</button>
                             </td>
