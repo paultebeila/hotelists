@@ -24,11 +24,6 @@
 
 }
 
-.heading{
-
-    color: rgb(27, 27, 144);
-
-}
 .payment-container .card-no{
 
     position: absolute;
@@ -48,7 +43,7 @@
 
 }
 
-.payment-container1 input[type=text]{
+.payment-container .card-number {
 
     position: absolute;
     top: 18vh;
@@ -65,7 +60,7 @@
     font-weight: 400;
     font-size: 1.3em;
 
-}
+} 
 
 input:focus { 
     outline: none !important;

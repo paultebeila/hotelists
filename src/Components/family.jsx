@@ -1,8 +1,7 @@
 // import Itachi from "../photos/photo.jpg";
+// import bg from '../slideIMG/5.jpg';
+// import bg from '../slideIMG/5.jpg';
 
-import bg from '../slideIMG/5.jpg';
-
-/*import bg from '../slideIMG/5.jpg';*/
 import "../css/family.css";
 import { Link } from "react-router-dom"
 import { useState } from "react";
