@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
 const Cart = () => {
@@ -54,9 +55,17 @@ const Cart = () => {
                 </div>
                 <div className="col-auto">
                     <button
+                        style={{width: '10vw', height: '5vh', marginTop: '30px'}}
                          className="btn btn-danger m-2"
                          onClick={()=>emptyCart()}
-                     >Clear Cart</button>
+                     >Clear Order(s)</button>
+
+               
+
+                     <span
+                        style={{width: '10vw', height: '5vh', marginTop: '30px', marginLeft: '10px'}}
+                         className="btn btn-danger m-2"
+                     > <Link to="/payment"> Go to Payment</Link></span>
                 </div>
             </div>
         </section>
