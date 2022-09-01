@@ -14,6 +14,7 @@ import Family from './Components/family';
 import Payment from './Components/Payment';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/family" element={<Family/>}></Route>
         <Route path="/Payment" element={<Payment/>}/>
+        
       </Routes>
     </BrowserRouter>
 

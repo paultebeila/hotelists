@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react";
 import Data from "../data.json"
 
+
 function Family(props){
     const [checkIn, setCheckIn] = useState("");
     const [checkOut, setCheckOut] = useState("");
@@ -102,6 +103,7 @@ function Family(props){
                 </tr>
                     </tbody>
                 </table>
+                
             </div>
         </div>
     )
