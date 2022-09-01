@@ -4,6 +4,9 @@ import "../css/family.css";
 import { Link } from "react-router-dom"
 import { useState } from "react";
 import Data from "../data.json"
+import Itemcard from "./itemcard";
+import data from "./data";
+import Cart from "./cart";
 
 
 function Family(props){
@@ -74,6 +77,38 @@ function Family(props){
                             <td>
                                 Family room gives you<br></br> enough space and confortability<br></br> to make your family not wanna leave
                             </td>
+                            <td>1</td>
+                            <td>
+                                <p>Breakfast, Lunch, Dinner,<br></br>
+                                   Massage,Swimming Pool,Wifi<br></br>
+                                </p>
+                            </td>
+                            <td>ZAR 1800</td>
+                            <td>
+
+                                <br></br><br></br>
+                            <section className="py-4 container">
+                                <div className="row justify-content-center">
+                                    {data.productData.map((item, index)=>{
+                                        return(
+                                            <Itemcard
+                                            img={item.img}
+                                            title={item.title}
+                                            desc={item.desc} 
+                                            price={item.price} 
+                                            item={item}
+                                            key={index} 
+                                            />
+                                        )
+                                    })}
+                                </div>
+                            </section>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                
+                            </td>
                             <td>2</td>
                             <td>
                                 <p>Breakfast, Lunch, Dinner,<br></br>
@@ -81,57 +116,21 @@ function Family(props){
                                 </p>
                             </td>
                             <td>ZAR 3600</td>
-                            <td>
-                                <button className="amount">Drop down</button>
-                            </td>
-                        </tr>
-                        <tr >
-                            <td>
-                                
-                            </td>
-                            <td>1</td>
-                            <td>ZAR 1800</td>
-                            <td>
-                                <br></br><br></br>
-                                <p>*Breakfast, Lunch, Dinner</p><br></br>
-                                <p>*Massage</p><br></br>
-                                <p>*Swimming Pool</p>
-                            </td>
-                            <td>
-                                <button className="amount">Drop down</button>
-                            </td>
+                            
                 </tr>
                     </tbody>
                 </table>
                 
             </div>
+
+            <span>
+                <Link to="/cart">ADDED ROOM</Link>
+            </span>
+        
+
         </div>
     )
 }
 
 export default Family;
 
-
-/*
-
-
-
-                        <tr>
-                        <td>Family room gives you<br></br> enough space and confortability<br></br> to make your family not wanna leave</td>
-                        
-                        <tr>
-                            <td>2</td>
-                            <td>ZAR 3600</td>
-                            <td>
-                                <p>*Breakfast, Lunch, Dinner</p><br></br>
-                                <p>*Massage</p><br></br>
-                                <p>*Swimming Pool</p>
-                            </td>
-                            <td>
-                                <button className="amount">Drop down</button>
-                            </td>
-                        </tr>
-                        </tr>
-
-
-                        */

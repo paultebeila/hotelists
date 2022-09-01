@@ -13,6 +13,8 @@ import Booking from './Components/Booking';
 import Family from './Components/family';
 import Payment from './Components/Payment';
 
+import { CartProvider } from "react-use-cart";
+import Cart from './Components/cart';
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
     <div className="App">
 
 
+    <CartProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Login />} />
@@ -30,9 +33,10 @@ function App() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/family" element={<Family/>}></Route>
         <Route path="/Payment" element={<Payment/>}/>
-        
+        <Route path="/cart" element={<Cart/>} />
       </Routes>
     </BrowserRouter>
+    </CartProvider>
 
       {/*<Router>
       <Routes>
