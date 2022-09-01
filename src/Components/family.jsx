@@ -1,6 +1,6 @@
 // import Itachi from "../photos/photo.jpg";
 // import bg from '../slideIMG/5.jpg';
-// import bg from '../slideIMG/5.jpg';
+import bg from '../slideIMG/5.jpg';
 
 import "../css/family.css";
 import { Link } from "react-router-dom"
@@ -29,7 +29,7 @@ function Family(props){
     return(
         <div className="container">
             <div className="top">
-                <img src="" alt="" />
+                <img src={bg} alt="bg" />
             </div>
             
             <div className="links">
@@ -51,9 +51,7 @@ function Family(props){
             </div>
 
             <div className="search">
-                <input type="date" placeholder="Check in date" className="in" required/>
-                <input type="date" placeholder="Check out date" className="out" required/>
-                <button type="button" placeholder="Search" className="nyaka"> Search </button>
+                
                 <input type="date" placeholder="Check in date" className="in" required
                 onChange={handleCheckIn} value={checkIn}/>
                 <input type="date" placeholder="Check out date" className="out" required
