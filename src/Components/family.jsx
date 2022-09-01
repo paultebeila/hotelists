@@ -1,14 +1,36 @@
 // import Itachi from "../photos/photo.jpg";
+
 import bg from '../slideIMG/5.jpg';
+
+/*import bg from '../slideIMG/5.jpg';*/
 import "../css/family.css";
 import { Link } from "react-router-dom"
+import { useState } from "react";
+import Data from "../data.json"
 
-function Family(){
+
+function Family(props){
+    const [checkIn, setCheckIn] = useState("");
+    const [checkOut, setCheckOut] = useState("");
+
+
+    const handleCheckIn = (e) =>{
+        setCheckIn(e.target.value);
+        
+    }
+    const handleCheckOut = (e) =>{
+        setCheckOut(e.target.value);
+        
+    }
+
+    const handleSubmit = () => {
+        
+    }
 
     return(
         <div className="container">
             <div className="top">
-                <img src={bg} alt="" />
+                <img src="" alt="" />
             </div>
             
             <div className="links">
@@ -33,6 +55,11 @@ function Family(){
                 <input type="date" placeholder="Check in date" className="in" required/>
                 <input type="date" placeholder="Check out date" className="out" required/>
                 <button type="button" placeholder="Search" className="nyaka"> Search </button>
+                <input type="date" placeholder="Check in date" className="in" required
+                onChange={handleCheckIn} value={checkIn}/>
+                <input type="date" placeholder="Check out date" className="out" required
+                onChange={handleCheckOut} value={checkOut}/>
+                <button type="button" placeholder="Search" className="nyaka" onClick={handleSubmit}> Search </button>
             </div>
 
             <div><h1 style={{marginTop: '2%'}}>Room Booking</h1></div>
@@ -50,6 +77,8 @@ function Family(){
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        
                         <tr>
                             <td>
                                 Family room gives you<br></br> enough space and confortability<br></br> to make your family not wanna leave
@@ -80,7 +109,7 @@ function Family(){
                             <td>
                                 <button className="amount">Drop down</button>
                             </td>
-                        </tr>
+                </tr>
                     </tbody>
                 </table>
             </div>
@@ -90,27 +119,3 @@ function Family(){
 
 export default Family;
 
-
-/*
-
-
-
-                        <tr>
-                        <td>Family room gives you<br></br> enough space and confortability<br></br> to make your family not wanna leave</td>
-                        
-                        <tr>
-                            <td>2</td>
-                            <td>ZAR 3600</td>
-                            <td>
-                                <p>*Breakfast, Lunch, Dinner</p><br></br>
-                                <p>*Massage</p><br></br>
-                                <p>*Swimming Pool</p>
-                            </td>
-                            <td>
-                                <button className="amount">Drop down</button>
-                            </td>
-                        </tr>
-                        </tr>
-
-
-                        */
