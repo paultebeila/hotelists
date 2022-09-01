@@ -77,7 +77,7 @@
 }
 .rooms{
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     align-content: center;
     overflow-y: hidden;
 }
@@ -91,6 +91,7 @@
     align-items: center;
     display: flex;
     margin-left: 7vw;
+    height: 30vh;
 }
 .luxury{
     /* margin-right: 65vw; */

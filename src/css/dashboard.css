@@ -53,6 +53,7 @@ textarea:focus {
     float: right;
     margin-right: 2vw;
     border-radius: 25px;
+    margin-top: .3vh;
     margin-bottom: 5vh;
 }
 
@@ -246,7 +247,6 @@ textarea:focus {
     color: rgb(15, 15, 14);
     background-color: whitesmoke;
     text-transform: capitalize;
-    /* background-image: url('../images/footer.jpeg'); */
     background-color: #719ECE;
     background-size: cover;
  }

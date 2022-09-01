@@ -8,11 +8,11 @@ function Booking(){
         <div className="container">
             <div className="page">
                 <div className="logo-img">
-                    <img src={hotelLogoImg} />
+                  <img src={hotelLogoImg} alt='Logo'/>
                 </div>
                 <nav className="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Booking</a>
+                <a href="./home">Home</a>
+                <a href="./booking">Booking</a>
                 <a href="#">Checkout</a>
                 <a href="#">Contact</a>
                 </nav>

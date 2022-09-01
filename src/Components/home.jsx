@@ -12,8 +12,8 @@ function Home(){
                 <img src="bopline.png" alt="Logo"/>
                     {/* <img src="../images/boopline.png"alt="Logo"/> */}
                 <div className="links">
-                   <a href="#" className="home">Home</a>
-                   <a href="#" className="rms">Rooms</a>
+                   <a href="./home" className="home">Home</a>
+                   <a href="" className="rms">Rooms</a>
                    <a href="#" className="about">About</a>
                    <a href="#" className="feat">Features</a>
                    <a href="#" className="contacts">Contacts</a>

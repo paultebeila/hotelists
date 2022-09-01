@@ -31,8 +31,8 @@ function Dashboard() {
                 <button className='logout'>Logout</button>
             </div>
 
-            <div className='center-container'>
-                
+            <div className='center-container' >
+                <div  style={{ display: 'flex', backgroundColor: 'transparent', marginLeft: '1.3vw', height:'30vh', overflowY: 'hidden' }}>
                 <div className='rooms fam' style={{ float: 'right' }}>
                 
                     <h4 style={{marginTop: '0px', background: 'transparent' }}>Family Room</h4>
@@ -72,8 +72,12 @@ function Dashboard() {
 
                 </div>
 
+                </div>
 
                 </div>
+
+            <div  style={{ display: 'flex', backgroundColor: 'transparent', marginLeft: '1.3vw', height:'30vh', overflowY: 'hidden' }}>
+    
 
                 <div className='rooms single' style={{ float: 'right'}}>
                     <h4 style={{marginTop: '0px', background: 'transparent' }}>Single Room</h4>
@@ -111,12 +115,9 @@ function Dashboard() {
                    <div className='avail'>Available</div>
 
                 </div>      
-
-
-                </div>
-
+               </div>
             </div>
-
+          </div>  
             <div className='right-container' style={{background: 'white' }}>
             
                 <h3>Latest Booking List</h3>
