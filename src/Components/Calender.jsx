@@ -2,32 +2,29 @@ import React from 'react'
 import "../css/dashboard.css"
 import admin from '../images/admin.jpg'
 import logo from '../images/logo.png'
-import { Navigate, Link } from 'react-router-dom'
 
 
-const toCalender = () =>{
-    Navigate('/calender')
-}
 
-function Dashboard() {
+const Calender = () => {
   return (
+    
 
     <div className='dashboard-container'>
        
-        <h2>Admin Dashboard </h2>
+        <h2>Admin Booking Calender</h2>
    
 
         <div className='search-container'> 
             <input type="text" placeholder='Search'/>
             <img src={admin} alt = 'Admin' />
-            <div className='user-profile'> Motsisi Charles </div>
+            <div className='user-profile'> Motsisi Charles.. </div>
         </div>
 
         <div className='det-container'>
         
             <div className='left-container'>
                 <img src={logo} alt='Logo' />
-                <button className='calender'> <Link to="/calender" style={{ textDecoration: 'none', color: '#000' }}> Calender </Link> </button>
+                <button className='calender'> Calender </button>
                 <button className='booking'> Booking </button>
                 <button className='earning'> Earning </button>
                 <button className='rooms-available'> Rooms Available </button>
@@ -179,8 +176,8 @@ function Dashboard() {
        
        
 </div>
-    
-    )
+
+  )
 }
 
-export default Dashboard;
+export default Calender

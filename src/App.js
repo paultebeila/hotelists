@@ -11,12 +11,13 @@ import Family from './Components/family';
 import Payment from './Components/Payment';
 import { CartProvider } from "react-use-cart";
 import Cart from './Components/cart';
+import Calender from "./Components/Calender";
+
 
 
 function App() {
   return (
     <div className="App">
-
 
     <CartProvider>
     <BrowserRouter>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/family" element={<Family/>} />
         <Route path="/Payment" element={<Payment/>}/>
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/calender" element={<Calender/>} />
       </Routes>
     </BrowserRouter>
     </CartProvider>
