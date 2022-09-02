@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 import { useState } from "react";
 import Data from "../data.json"
 import Itemcard from "./itemcard";
-import data from "./dataf";
+import data from "./datad";
 import Cart from "./cart";
 
 
-function Family(props){
+function Deluxe(props){
     const [checkIn, setCheckIn] = useState("");
     const [checkOut, setCheckOut] = useState("");
 
@@ -134,5 +134,5 @@ function Family(props){
     )
 }
 
-export default Family;
+export default Deluxe;
 
