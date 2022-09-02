@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/payment.css'
-import master from '../slideIMG/master.svg'
-import swiping from '../slideIMG/swiping.jpg'
+import master from '../images/master.svg'
+import swiping from '../images/swiping.jpg'
 
 const Payment = () => {
   return (
@@ -14,7 +14,7 @@ const Payment = () => {
             <h6 className='sixteen-dig' style={{ textDecoration: 'capitalise' }}> Enter the 16 digits card number on your card</h6>
         
             <img className='icon' src={master} alt='master'/>
-            <input className='card-number' type='text' placeholder='1234 - 5678 - 9876 - 8674' pattern="[0-9]+" />
+            <input type='text' placeholder='1234 - 5678 - 9876 - 8674' pattern="[0-9]+" />
 
             <h5 className='cvv-text'>Cvv Number</h5>        
             <h6 className='cvv-text-exp'> Enter 3 or 4 digit number on the card </h6>

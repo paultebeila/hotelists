@@ -1,8 +1,12 @@
-import bg from '../slideIMG/5.jpg';
+// import Itachi from "../photos/photo.jpg";
+/*import bg from '../slideIMG/5.jpg';*/
 import "../css/family.css";
 import { Link } from "react-router-dom"
 import { useState } from "react";
 import Data from "../data.json"
+import Itemcard from "./itemcard";
+import data from "./data";
+import Cart from "./cart";
 
 
 function Family(props){
@@ -26,7 +30,7 @@ function Family(props){
     return(
         <div className="container">
             <div className="top">
-                <img src={bg} alt="bg" />
+                <img src="" alt="" />
             </div>
             
             <div className="links">
@@ -48,7 +52,6 @@ function Family(props){
             </div>
 
             <div className="search">
-                
                 <input type="date" placeholder="Check in date" className="in" required
                 onChange={handleCheckIn} value={checkIn}/>
                 <input type="date" placeholder="Check out date" className="out" required
@@ -62,12 +65,11 @@ function Family(props){
                 <table>
                     <thead>
                         <tr style={{backgroundColor: 'darkgray'}}>
-                            <td>Room Type</td>
-                            <td>Sleeps</td>
-                            <td>Price per Night</td>
+                            <td>Room Info</td>
+                            <td>Qty</td>
                             <td>Services</td>
+                            <td>Initial Amount</td>
                             <td>Amount</td>
-                            <td>Booking Slip</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -77,36 +79,57 @@ function Family(props){
                             <td>
                                 Family room gives you<br></br> enough space and confortability<br></br> to make your family not wanna leave
                             </td>
-                            <td>2</td>
-                            <td>ZAR 3600</td>
+                            <td>1</td>
                             <td>
-                                <p>*Breakfast, Lunch, Dinner</p><br></br>
-                                <p>*Massage</p><br></br>
-                                <p>*Swimming Pool</p>
+                                <p>Breakfast, Lunch, Dinner,<br></br>
+                                   Massage,Swimming Pool,Wifi<br></br>
+                                </p>
                             </td>
+                            <td>ZAR 1800</td>
                             <td>
-                                <button className="amount">Drop down</button>
+
+                                <br></br><br></br>
+                            <section className="py-4 container">
+                                <div className="row justify-content-center">
+                                    {data.productData.map((item, index)=>{
+                                        return(
+                                            <Itemcard
+                                            img={item.img}
+                                            title={item.title}
+                                            desc={item.desc} 
+                                            price={item.price} 
+                                            item={item}
+                                            key={index} 
+                                            />
+                                        )
+                                    })}
+                                </div>
+                            </section>
                             </td>
                         </tr>
                         <tr >
                             <td>
                                 
                             </td>
-                            <td>1</td>
-                            <td>ZAR 1800</td>
+                            <td>2</td>
                             <td>
-                                <br></br><br></br>
-                                <p>*Breakfast, Lunch, Dinner</p><br></br>
-                                <p>*Massage</p><br></br>
-                                <p>*Swimming Pool</p>
+                                <p>Breakfast, Lunch, Dinner,<br></br>
+                                   Massage,Swimming Pool,Wifi<br></br>
+                                </p>
                             </td>
-                            <td>
-                                <button className="amount">Drop down</button>
-                            </td>
+                            <td>ZAR 3600</td>
+                            
                 </tr>
                     </tbody>
                 </table>
+                
             </div>
+
+            <span>
+                <Link to="/cart">ADDED ROOM</Link>
+            </span>
+        
+
         </div>
     )
 }

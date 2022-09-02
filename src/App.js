@@ -8,13 +8,18 @@ import SignUp from "./Components/signup"
 import Dashboard from './Components/Dashboard'
 import Home from './Components/home'
 import Family from './Components/family';
-import Payment from './Components/Payment'
+import Payment from './Components/Payment';
+
+import { CartProvider } from "react-use-cart";
+import Cart from './Components/cart';
 
 
 function App() {
   return (
     <div className="App">
 
+
+    <CartProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Login />} />
@@ -22,12 +27,23 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/family" element={<Family />} />
-        <Route path="/pay" element={<Payment />} />
-
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/family" element={<Family/>}></Route>
+        <Route path="/Payment" element={<Payment/>}/>
+        <Route path="/cart" element={<Cart/>} />
       </Routes>
     </BrowserRouter>
-    
+    </CartProvider>
+
+      {/*<Router>
+      <Routes>
+        <Route exact path="/" element={Login}></Route>
+        <Route path="/forgotPass" element={ForgotPass}></Route>
+        <Route path="/signup" element={SignUp}></Route>
+        <Route path="/family" element={Family}></Route>
+      </Routes>
+  </Router>*/}
+
     </div>
   );
 }
