@@ -1,11 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import "../css/dashboard.css"
 import admin from '../images/admin.jpg'
 import logo from '../images/logo.png'
+import { useNavigate, Link } from 'react-router-dom'
+
+
 
 
 
 const Calender = () => {
+
+    const [date, setDate] = useState(new Date());
+
+
+
+const navigate = useNavigate();
+
+const toCalender = () =>{
+    navigate('/calender')
+}
+
+const toBooking = () =>{
+    navigate('/bookings')
+}
+
+const toEarning = () =>{
+    navigate('/calender')
+}
+
+const toRoomAvailable = () =>{
+    navigate('/calender')
+}
+
+const toLogout = () =>{
+    navigate('/calender')
+}
+
+
   return (
     
 
@@ -17,107 +50,53 @@ const Calender = () => {
         <div className='search-container'> 
             <input type="text" placeholder='Search'/>
             <img src={admin} alt = 'Admin' />
-            <div className='user-profile'> Motsisi Charles.. </div>
+            <div className='user-profile'> Motsisi Charles </div>
         </div>
 
         <div className='det-container'>
         
-            <div className='left-container'>
+        <div className='left-container'>
                 <img src={logo} alt='Logo' />
-                <button className='calender'> Calender </button>
-                <button className='booking'> Booking </button>
-                <button className='earning'> Earning </button>
-                <button className='rooms-available'> Rooms Available </button>
-                <button className='logout'>Logout</button>
-            </div>
+                <button className='calender' onClick={toCalender}> Calender  </button>
+                <button className='booking' onClick={toBooking}>  Booking </button>
+                <button className='earning' onClick={toEarning}> Earning </button>
+                <button className='rooms-available' onClick={toRoomAvailable}> Rooms Available </button>
+                <button className='logout' onClick={toLogout}> Logout</button>
+            </div>      
 
             <div className='center-container' >
-                <div  style={{ display: 'flex', backgroundColor: 'transparent', marginLeft: '1.3vw', height:'30vh', overflowY: 'hidden' }}>
-                <div className='rooms fam' style={{ float: 'right' }}>
-                
-                    <h4 style={{marginTop: '0px', background: 'transparent' }}>Family Room</h4>
 
-                    <div className='room-details-container' style={{ display:'flex' }}>
-                        <div className='booked'>3</div>
-                        <div className='checked'>10</div>
-                        <div className='avail'>35</div>
+            {/* Calender  */}
+            
+                    <div className='calendar-container' style={{ 
+
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                        paddingLeft: '13vw'
+
+                    }} >
+                    <Calendar onChange={setDate} value={date}  />
                     </div>
 
-                    <div className='room-stats-container' style={{ display:'flex', background: 'transparent' }}>
-                    
-                       <div className='booked'>Booked</div>
-                       <div className='checked'>Checked</div>
-                       <div className='avail'>Available</div>
+                     {/*
+                    <p className='text-center' style={{ 
 
-                    </div>
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                        
+                    }}>
+                  
+                    <span className='bold' style={{ 
 
-                </div>
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)'
 
-                <div className='rooms deluxe' style={{ float: 'right', }}>
-                
-                    <h4 style={{marginTop: '0px', background: 'transparent' }}>Deluxe Room</h4>
+                    }}>Selected Date:</span>{' '}
+                    {date.toDateString()}
+                </p>  */}
+     
 
+            {/* End Calender */}
 
-                    <div className='room-details-container' style={{ display:'flex' }}>
-                    <div className='booked'>3</div>
-                    <div className='checked'>10</div>
-                    <div className='avail'>35</div>
-                </div>
-
-                <div className='room-stats-container' style={{ display:'flex', background: 'transparent' }}>
-                
-                   <div className='booked'>Booked</div>
-                   <div className='checked'>Checked</div>
-                   <div className='avail'>Available</div>
-
-                </div>
-
-                </div>
-
-                </div>
-
-            <div  style={{ display: 'flex', backgroundColor: 'transparent', marginLeft: '1.3vw', height:'30vh', overflowY: 'hidden' }}>
-    
-
-                <div className='rooms single' style={{ float: 'right'}}>
-                    <h4 style={{marginTop: '0px', background: 'transparent' }}>Single Room</h4>
-
-                    <div className='room-details-container' style={{ display:'flex' }}>
-                    <div className='booked'>3</div>
-                    <div className='checked'>10</div>
-                    <div className='avail'>35</div>
-                </div>
-
-                <div className='room-stats-container' style={{ display:'flex', background: 'transparent' }}>
-                
-                   <div className='booked'>Booked</div>
-                   <div className='checked'>Checked</div>
-                   <div className='avail'>Available</div>
-
-                </div>
-
-                </div>
-
-                <div className='rooms luxury' style={{ float: 'right' }} >
-
-                    <h4 style={{marginTop: '0px', background: 'transparent' }}>Luxury Room</h4>
-
-                    <div className='room-details-container' style={{ display:'flex' }}>
-                    <div className='booked'>3</div>
-                    <div className='checked'>10</div>
-                    <div className='avail'>35</div>
-                </div>
-
-                <div className='room-stats-container' style={{ display:'flex', background: 'transparent' }}>
-                
-                   <div className='booked'>Booked</div>
-                   <div className='checked'>Checked</div>
-                   <div className='avail'>Available</div>
-
-                </div>      
-               </div>
-            </div>
-          </div>  
+            </div>  
+          
             <div className='right-container' style={{background: 'white' }}>
             
                 <h3>Latest Booking List</h3>

@@ -12,6 +12,12 @@ import Payment from './Components/Payment';
 import { CartProvider } from "react-use-cart";
 import Cart from './Components/cart';
 import Calender from "./Components/Calender";
+import Map from './Components/map'
+import EventList from './Components/EventList'
+import {AdminBookings} from './Components/Admin-Bookings'
+import {Earnings} from './Components/Earnings'
+import {RoomsAvailable} from './Components/Rooms-Available'
+
 
 
 
@@ -31,6 +37,14 @@ function App() {
         <Route path="/Payment" element={<Payment/>}/>
         <Route path="/cart" element={<Cart/>} />
         <Route path="/calender" element={<Calender/>} />
+        <Route path="/map" element={<Map/>} />
+        <Route path="/event" element={<EventList/>} />
+        <Route path="/bookings" element={<AdminBookings/>} />
+        <Route path="/earnings" element={<Earnings/>} />
+        <Route path="/rooms" element={<RoomsAvailable/>} />
+
+
+
       </Routes>
     </BrowserRouter>
     </CartProvider>
