@@ -52,9 +52,9 @@ function Family(props){
             </div>
 
             <div className="search">
-                <input type="date" placeholder="Check in date" className="in" required
+                <input type="date" placeholder="Check in date" className="in"
                 onChange={handleCheckIn} value={checkIn}/>
-                <input type="date" placeholder="Check out date" className="out" required
+                <input type="date" placeholder="Check out date" className="out"
                 onChange={handleCheckOut} value={checkOut}/>
                 <button type="button" placeholder="Search" className="nyaka" onClick={handleSubmit}> Search </button>
             </div>
@@ -128,7 +128,11 @@ function Family(props){
             <span>
                 <Link to="/cart">ADDED ROOM</Link>
             </span>
-        
+            
+            <div>
+                <Cart chechIn={checkIn} checkOut={checkOut}/>
+            </div>
+            
 
         </div>
     )

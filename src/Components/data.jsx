@@ -22,4 +22,6 @@ const data = {
     ]
 }
 
+//const res = await db.collection('data').doc('one').set(data);
+
 export default data;

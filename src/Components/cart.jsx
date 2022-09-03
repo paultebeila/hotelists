@@ -1,8 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
+import { useState } from "react";
 
-const Cart = () => {
+const Cart = (props) => {
+
+    const [takeInDate, setInDate] = useState('');
+    const [takeOutDate, setOutDate] = useState('');
+    const dates =()=>{
+        setInDate(props.checkIn);
+        setOutDate(props.checkOut);
+    }
     const {
         isEmpty,
         totalUniqueItems, 
@@ -30,6 +38,9 @@ const Cart = () => {
                                     <td><h3 style={{marginLeft: '-10px'}}>{item.title}</h3></td>
                                     <td>{item.price}</td>
                                     <td>Quantity ({item.quantity})</td>
+                                    <td>Quantity ({item.quantity})</td>
+                                    <td>Check In ({props.checkIn})</td>
+                                    <td>Check Out ({props.checkOut})</td>
                                     <td>
                                         <button
                                             className="btn btn-info ms-2"
