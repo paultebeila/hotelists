@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUp from "./Components/signup"
 import Dashboard from './Components/Dashboard'
 import Home from './Components/home'
-import Family from './Components/family';
 import Payment from './Components/Payment';
 import { CartProvider } from "react-use-cart";
 import Cart from './Components/cart';
@@ -19,6 +18,12 @@ import {Earnings} from './Components/Earnings'
 import {RoomsAvailable} from './Components/Rooms-Available'
 
 
+
+
+import Family from './Components/family';
+import Luxury from './Components/luxury';
+import Deluxe from './Components/deluxe';
+import Standard from './Components/standard';
 
 
 function App() {
@@ -34,6 +39,9 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/home" element={<Home />} />
         <Route path="/family" element={<Family/>} />
+        <Route path="/luxury" element={<Luxury/>} />
+        <Route path="/deluxe" element={<Deluxe/>} />
+        <Route path="/standard" element={<Standard/>} />
         <Route path="/Payment" element={<Payment/>}/>
         <Route path="/cart" element={<Cart/>} />
         <Route path="/calender" element={<Calender/>} />

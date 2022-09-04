@@ -128,7 +128,11 @@ function Deluxe(props){
             <span>
                 <Link to="/cart">ADDED ROOM</Link>
             </span>
-        
+            <div>
+                <Cart chechIn={checkIn} checkOut={checkOut}/>
+            </div>
+                                    
+                                
 
         </div>
     )

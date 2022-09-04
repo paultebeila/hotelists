@@ -23,17 +23,47 @@
 
 }
 
+.cont nav{
+        margin-top: -11.2%;
+        margin-right: 10%;
+        background-color: transparent;
+        float: right;
+        margin-bottom: 20vh;
+
+}
+
+.cont nav a{
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;  
+
+}
+
+.btn-logout{
+    margin-top: -23.6%;
+    margin-left: 90%;
+    background-color: transparent;
+    color: green;
+}
+.btn-logout .this{
+    background-color: green;
+    color: white;
+    height: 40px;
+    width: 60%;
+}
+
 .links{
-    margin-top: -20vh;
-    margin-left: 50vw;
-    background-color:transparent;
+    
+    background-color:red;
 }
 
 .links a{
     background-color: transparent;
 }
 
-
+/* 
 .home{
    color: #fff;
    font-size: 20px;
@@ -58,19 +88,20 @@
    font-size: 20px;
    text-decoration: none;
    margin-left: 2vw;
-}
+} */
 .cont img{
     width: 15vw;
     height: 20vh;
     margin-right: 80vw;
     padding-top: 20px;
-}
-.contacts{
+ }
+/* 
+ .contacts{
     color: #fff;
    font-size: 20px;
    text-decoration: none;
    margin-left: 2vw;
-}
+} */
 .form{
     margin:0;
     border-top: 1px solid black;

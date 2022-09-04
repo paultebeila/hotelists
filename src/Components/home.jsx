@@ -3,6 +3,7 @@ import "../css/home.css";
 import { MdHome} from "react-icons/md"
 import { MdEmail} from "react-icons/md"
 import { BsTelephone} from "react-icons/bs"
+import { Link } from "react-router-dom";
 
 function Home(){
     return(
@@ -11,16 +12,19 @@ function Home(){
             <div className="cont">
                 <img src="bopline.png" alt="Logo"/>
                     {/* <img src="../images/boopline.png"alt="Logo"/> */}
-                <div className="links">
-                   <a href="./home" className="home">Home</a>
-                   <a href="" className="rms">Rooms</a>
-                   <a href="#" className="about">About</a>
-                   <a href="#" className="feat">Features</a>
-                   <a href="#" className="contacts">Contacts</a>
-                </div>
+                <nav >
+                   <a href="./home">Home</a>
+                   <a href="" >Rooms</a>
+                   <a href="#" >About</a>
+                   <a href="#" >Features</a>
+                   <a href="#" >Contacts</a>
+                </nav>
                 <div className="msg">
                     <p>Get a discount of 20% when you <br></br>
                       book both standard and deluxe suites!!!</p>
+                </div>
+                <div className="btn-logout">
+                    <Link to='/'><button className="this">LOG OUT</button></Link>
                 </div>
                
             </div>
@@ -29,22 +33,30 @@ function Home(){
                     <h2>Our Rooms</h2>
                     <div className="img">
                         <div className="luxury">
-                            <img src="luxury.jpeg" alt=""/><br></br>
+                            <span>
+                            <Link to="/luxury"><img src="luxury.jpeg" alt=""/></Link>
+                            </span><br></br>
                             <h4>Luxury Room</h4>
                             <p>R4500 per night</p>
                         </div>
                         <div className="deluxe">
-                            <img src="deluxe-room.jpeg" alt=""/><br></br>
+                            <span>
+                            <Link to="/deluxe"><img src="deluxe-room.jpeg" alt=""/></Link>
+                            </span><br></br>
                             <h4>Deluxe Room</h4>
                             <p>R2200 per night</p>
                         </div>
                         <div className="single">
-                            <img src="single.jpg" alt=""/><br></br>
-                            <h4>Single Room</h4>
+                            <span>
+                            <Link to="/standard"><img src="single.jpg" alt=""/></Link>
+                            </span><br></br>
+                            <h4>Standard Room</h4>
                             <p>R800 per night</p>
                         </div>
                         <div className="family">
-                            <img src="family room.jpg" alt=""/><br></br>
+                        <span>
+                            <Link to="/family"><img src="family room.jpg" alt=""/></Link>
+                        </span><br></br>
                             <h4>Family Room</h4>
                             <p>R1800 per night</p>
                         </div>

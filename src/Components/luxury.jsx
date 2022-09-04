@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 import { useState } from "react";
 import Data from "../data.json"
 import Itemcard from "./itemcard";
-import data from "./dataf";
+import data from "./datal";
 import Cart from "./cart";
 
 
-function Family(props){
+function Luxury(props){
     const [checkIn, setCheckIn] = useState("");
     const [checkOut, setCheckOut] = useState("");
 
@@ -52,9 +52,9 @@ function Family(props){
             </div>
 
             <div className="search">
-                <input type="date" placeholder="Check in date" className="in"
+                <input type="date" placeholder="Check in date" className="in" required
                 onChange={handleCheckIn} value={checkIn}/>
-                <input type="date" placeholder="Check out date" className="out"
+                <input type="date" placeholder="Check out date" className="out" required
                 onChange={handleCheckOut} value={checkOut}/>
                 <button type="button" placeholder="Search" className="nyaka" onClick={handleSubmit}> Search </button>
             </div>
@@ -128,15 +128,14 @@ function Family(props){
             <span>
                 <Link to="/cart">ADDED ROOM</Link>
             </span>
-            
             <div>
                 <Cart chechIn={checkIn} checkOut={checkOut}/>
             </div>
-            
+        
 
         </div>
     )
 }
 
-export default Family;
+export default Luxury;
 
