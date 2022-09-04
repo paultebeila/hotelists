@@ -33,18 +33,24 @@ function Home(){
                     <h2>Our Rooms</h2>
                     <div className="img">
                         <div className="luxury">
-                            <img src="luxury.jpeg" alt=""/><br></br>
+                            <span>
+                            <Link to="/luxury"><img src="luxury.jpeg" alt=""/></Link>
+                            </span><br></br>
                             <h4>Luxury Room</h4>
                             <p>R4500 per night</p>
                         </div>
                         <div className="deluxe">
-                            <img src="deluxe-room.jpeg" alt=""/><br></br>
+                            <span>
+                            <Link to="/deluxe"><img src="deluxe-room.jpeg" alt=""/></Link>
+                            </span><br></br>
                             <h4>Deluxe Room</h4>
                             <p>R2200 per night</p>
                         </div>
                         <div className="single">
-                            <img src="single.jpg" alt=""/><br></br>
-                            <h4>Single Room</h4>
+                            <span>
+                            <Link to="/standard"><img src="single.jpg" alt=""/></Link>
+                            </span><br></br>
+                            <h4>Standard Room</h4>
                             <p>R800 per night</p>
                         </div>
                         <div className="family">
