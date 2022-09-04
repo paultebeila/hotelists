@@ -71,13 +71,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 0;
     width: auto;
 }
-
+/* 
 input[type="date"]:not(.has-value):before{
     color: rgb(9, 9, 9);
     content: attr(placeholder);
     width: 100%;
-  }
-
+  } */
+/* 
   input[type=date] {
     text-align: right;
   } 
@@ -86,10 +86,10 @@ input[type="date"]:not(.has-value):before{
     color: lightgrey;
     content: attr(placeholder) !important;
     margin-right: 0.5em;
-  }
-
+  } */
+/* 
   input[type="date"]:before {
     color: lightgrey;
     content: attr(placeholder) !important;
     margin-right: 0.5em;
-   }
+   } */

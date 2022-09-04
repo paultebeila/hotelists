@@ -129,7 +129,7 @@ function Family(props){
                 <Link to="/cart">ADDED ROOM</Link>
             </span>
             <div>
-                <Cart checkIn={checkIn} checkOut={checkOut}/>
+               <Cart checkIn={checkIn} checkOut={checkOut}/>
             </div>
 
         </div>

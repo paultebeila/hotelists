@@ -4,11 +4,16 @@ import { useCart } from "react-use-cart";
 import {useState} from 'react'
 
 const Cart = (props) => {
-    const [takeIn, setTakeIn] = useState('');
-    const [takeOut, setTakeOut] = useState('');
-    const dates =()=>{
+    const [takeIn, setTakeIn] = useState(props.checkIn);
+    const [takeOut, setTakeOut] = useState(props.checkIn);
+      const In =()=>{
         setTakeIn(props.checkIn);
-        setTakeIn(props.checkIn);
+         return takeIn;
+    }
+
+    const Out =()=>{
+        setTakeOut(props.checkOut);
+        return takeOut;
     }
     const {
         isEmpty,
@@ -37,8 +42,8 @@ const Cart = (props) => {
                                     <td><h3 style={{marginLeft: '-10px'}}>{item.title}</h3></td>
                                     <td>{item.price}</td>
                                     <td>Quantity ({item.quantity})</td>
-                                    <td>CheckIn ({props.checkIn})</td>
-                                    <td>CheckOut ({props.checkOut})</td>
+                                    <td>CheckIn </td>
+                                    <td>CheckOut ({()=>takeOut})</td>
                                     <td>
                                         <button
                                             className="btn btn-info ms-2"
