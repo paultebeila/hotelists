@@ -7,6 +7,7 @@ import Data from "../data.json"
 import Itemcard from "./itemcard";
 import data from "./dataf";
 import Cart from "./cart";
+import Payment from "../Components/Payment"
 
 
 function Family(props){
@@ -97,13 +98,16 @@ function Family(props){
                                             img={item.img}
                                             title={item.title}
                                             desc={item.desc} 
-                                            price={item.price} 
+                                            price={item.price}
+                                            checkIn={checkIn}
+                                            checkOut={checkOut} 
                                             item={item}
                                             key={index} 
                                             />
                                         )
                                     })}
                                 </div>
+                                
                             </section>
                             </td>
                         </tr>
@@ -132,6 +136,21 @@ function Family(props){
             <div>
                 <Cart chechIn={checkIn} checkOut={checkOut}/>
             </div>
+            {/*<div className="hide-payment" style={{display: "none"}}>
+            {data.productData.map((item, index)=>{
+                return(
+                    <Payment
+                    title={item.title}
+                    desc={item.desc} 
+                    price={item.price}
+                    checkIn={checkIn}
+                    checkOut={checkOut} 
+                    item={item}
+                    key={index} 
+                    />
+                )
+            })}
+        </div>*/}
             
 
         </div>

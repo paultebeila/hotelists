@@ -30,20 +30,20 @@ const Cart = (props) => {
         <section className="py-4 container">
             <div className="row justify-content-center">
                 <div className="col-12">
-                    <h5>Cart: ({totalUniqueItems}) total Items: ({totalItems}) </h5>
+                    <h5>Booking: ({totalUniqueItems}) total Items: ({totalItems}) </h5>
                     <table className="table table-light table-hover m-0">
                         <tbody>
                             {items.map((item, index)=>{
                                 return(
                                     <tr key={index}>
                                  <td style={{ backgroundColor: 'red', width: '16vw'}}>
-                                        <img src={item.img} style={{height: '20vh', width: '15vw', }} />
+                                        <img src={item.img} style={{height: '20vh', width: '15vw', }} alt=""/>
                                     </td>
                                     <td><h3 style={{marginLeft: '-10px'}}>{item.title}</h3></td>
                                     <td>{item.price}</td>
                                     <td>Quantity ({item.quantity})</td>
-                                    <td>CheckIn </td>
-                                    <td>CheckOut ({()=>takeOut})</td>
+                                    <td></td>
+                                    <td></td>
                                     <td>
                                         <button
                                             className="btn btn-info ms-2"
@@ -56,7 +56,7 @@ const Cart = (props) => {
                                         <button
                                          className="btn btn-danger ms-2"
                                          onClick={()=> removeItem(item.id)}
-                                         >Remove Item</button>
+                                         >Remove Booking</button>
                                     </td>
                                 </tr>
                                 )
