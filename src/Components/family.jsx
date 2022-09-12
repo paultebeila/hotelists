@@ -25,7 +25,21 @@ function Family(props){
     }
 
     const handleSubmit = () => {
-        
+        <div>
+        {data.productData.map((item, index)=>{
+            return(
+                <Payment
+                title={item.title}
+                desc={item.desc} 
+                price={item.price}
+                checkIn={checkIn}
+                checkOut={checkOut} 
+                item={item}
+                key={index} 
+                />
+            )
+        })}
+    </div>
     }
 
     return(

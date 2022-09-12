@@ -7,8 +7,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { useState } from "react";
 
 const Payment = (props) => {
-
-    /* 
+  
   const [title, setTitle] = useState('');
             const [price, setPrice] = useState('');
             const [desc, setDesc] = useState('');
@@ -23,14 +22,14 @@ const Payment = (props) => {
 
             const add=(()=>{
                 
-                
+              
                 setTitle(props.title)
                 setPrice(props.price)
                 setDesc(props.desc)
                 setTheCheckIn(props.checkIn);
                 setTheCheckOut(props.checkOut);
                 
-             
+                add(props.item);
                 const collectionRef=collection(db,"Booking");
                 
                 const transaction={
@@ -47,7 +46,6 @@ const Payment = (props) => {
                 };
 
                 console.log(transaction)
-                
                 addDoc(collectionRef, transaction).then(()=>{
                     console.log(transaction);
                     alert("Added Booking successfully")
@@ -78,13 +76,13 @@ const Payment = (props) => {
             setExpiryYear(e.target.value)
           }
             
-  */ 
+
 
   return (
      
         <div className='payment-container'>
 
-            {/*<img src={swiping} alt='bg' style={{ height: '90vh', opacity: '0.2' }}/>
+            <img src={swiping} alt='bg' style={{ height: '90vh', opacity: '0.2' }}/>
 
             <h5 className='card-no'> Card Number </h5>
             <h6 className='sixteen-dig' style={{ textDecoration: 'capitalise' }}> Enter the 16 digits card number on your card</h6>
@@ -106,11 +104,10 @@ const Payment = (props) => {
             <h6 className='pass-enter'> Enter your dynamic password </h6>
             <input className='password' placeholder='Password'/>    
 
-  <button className='pay-now' onClick={add}>Pay Now</button>*/}
+            <button className='pay-now' onClick={add}>Pay Now</button>
         </div>  
   
   )
 }
-   
 
-export default Payment;
+export default Payment

@@ -8,13 +8,13 @@ const Itemcard = (props) =>{
     
     const { addItem } = useCart();
 
-    /*const item=()=>{
+    const item=()=>{
         addItem(props.item);
         alert("Booking reserved, proceed to checkout")
-    }*/
+    }
     
 
-            const [title, setTitle] = useState('');
+            /*const [title, setTitle] = useState('');
             const [price, setPrice] = useState('');
             const [desc, setDesc] = useState('');
             const [theCheckIn, setTheCheckIn] = useState('');
@@ -30,7 +30,7 @@ const Itemcard = (props) =>{
                 setTheCheckIn(props.checkIn);
                 setTheCheckOut(props.checkOut);
                 setTotal()
-                addItem(props.item);
+
                 const collectionRef=collection(db,"Booking");
                 
                 const transaction={
@@ -56,7 +56,7 @@ const Itemcard = (props) =>{
         
                 //props.add(title, price, desc);
                 
-            })
+            })*/
 
 
     return(
@@ -68,7 +68,7 @@ const Itemcard = (props) =>{
                     <h5 hidden className="card-title">R{props.price}</h5>
                     
                     <p className="card-text">{props.desc}</p>
-                    <button className="btn btn-success" onClick={add}>
+                    <button className="btn btn-success" onClick={item}>
                         Booking
                     </button>
                 </div>
